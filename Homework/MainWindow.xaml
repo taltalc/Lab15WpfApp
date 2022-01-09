@@ -1,0 +1,150 @@
+﻿<Window x:Class="Homework.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Homework"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <FlowDocumentScrollViewer>
+            <FlowDocument>
+                <Paragraph>
+                    <Floater Width="300" HorizontalAlignment="Right">
+                        <BlockUIContainer>
+                            <Image Source="Data/1.gif"/>
+                        </BlockUIContainer>
+                    </Floater>
+                    <Bold>Законы</Bold>
+                    <Hyperlink NavigateUri="https://ru.wikipedia.org/wiki/%D0%9D%D1%8C%D1%8E%D1%82%D0%BE%D0%BD,_%D0%98%D1%81%D0%B0%D0%B0%D0%BA">Ньютона</Hyperlink>
+                </Paragraph>
+                <Paragraph>
+                    <Underline>Основные определения</Underline>
+                </Paragraph>
+                <List MarkerStyle="Disc">
+                    <ListItem>
+                        <Paragraph>
+                            <Italic><Run Foreground="Red">Инерция</Run> </Italic> - свойство тел сохранять свою скорость при отсутствии действия на него других тел.
+                        </Paragraph>
+                    </ListItem>  
+                </List>
+                <List MarkerStyle="Disc">
+                    <ListItem>
+                        <Paragraph>
+                            <Italic><Run Foreground="Red">Масса тела (m)</Run> </Italic> – количественная мера его инертности. В СИ она измеряется в килограммах. 
+                        </Paragraph>
+                    </ListItem>
+                </List>
+                <List MarkerStyle="Disc">
+                    <ListItem>
+                        <Paragraph>
+                           <Italic><Run Foreground="Red">Сила (F)</Run> </Italic> – количественная мера взаимодействия тел. Сила – векторная величина и измеряется в ньютонах (Н). Сила, которая производит на тело такое же действие, как несколько одновременно действующих сил, называется <Italic><Run Foreground="Red">равнодействующей</Run> </Italic> этих сил.
+                        </Paragraph>
+                    </ListItem>
+                </List>
+                <List MarkerStyle="Disc">
+                    <ListItem>
+                        <Paragraph>
+                            <Italic><Run Foreground="Red">Ускорение (a)</Run> </Italic>  — физическая величина, определяющая быстроту изменения скорости тела, то есть первая производная от скорости по времени. Ускорение - векторная величина, показывающая, на сколько изменяется вектор скорости тела при его движении за единицу времени.
+                        </Paragraph>
+                    </ListItem>
+                </List>
+                <Table>
+                    <Table.Columns>
+                        <TableColumn Width="200"/>
+                        <TableColumn/>
+                    </Table.Columns>
+                    <TableRowGroup>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    <Run FontSize="15">Название закона</Run>
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    <Run FontSize="15">Определение</Run>
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    <Floater>
+                                        <BlockUIContainer>
+                                            <Separator/>
+                                        </BlockUIContainer>
+                                    </Floater>
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    <Italic>
+                                       Первый закон Ньютона</Italic> 
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    Если на тело не действуют силы или их действие скомпенсировано, то данное тело находится в состоянии покоя или равномерного прямолинейного движения. Системы отсчета, в которых выполняется первый закон Ньютона, называются <Italic><Run Foreground="Red">инерциальными</Run> </Italic>. Системы отсчета, движущиеся относительно инерциальных с ускорением, называются <Italic><Run Foreground="Red">неинерциальными</Run> </Italic>.
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    <Floater>
+                                        <BlockUIContainer>
+                                            <Separator/>
+                                        </BlockUIContainer>
+                                    </Floater>
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                        <Italic>
+                                            Второй закон Ньютона
+                                        </Italic>
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    Ускорение тела прямо пропорционально равнодействующей сил, приложенных к телу, и обратно пропорционально его массе. Если два тела взаимодействуют друг с другом, то ускорения этих тел обратно пропорциональны их массам.
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    <Floater>
+                                        <BlockUIContainer>
+                                            <Separator/>
+                                        </BlockUIContainer>
+                                    </Floater>
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                        <Italic>
+                                            Третий закон Ньютона
+                                        </Italic>
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    Силы, с которыми тела взаимодействуют друг с другом, равны по модулю и направлены вдоль одной прямой в противоположные стороны.
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                    </TableRowGroup>
+                </Table>
+                 
+            </FlowDocument>
+        </FlowDocumentScrollViewer>
+    </Grid>
+</Window>
